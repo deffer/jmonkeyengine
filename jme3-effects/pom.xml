@@ -2,21 +2,28 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>org.deffer.com.jme3</groupId>
-	<artifactId>jme3-core</artifactId>
+	<artifactId>jme3-effects</artifactId>
 	<version>3.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>JMonkey Engine Core</name>
-	<description>JMonkey Engine Core</description>
+	<name>JMonkey Engine Effects</name>
+	<description>JMonkey Engine Effects module</description>
 
 	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	
+	<dependencies>
+		<dependency>
+			<groupId>org.deffer.com.jme3</groupId>
+			<artifactId>jme3-core</artifactId>
+			<version>[3,4)</version>
+		</dependency>
+	</dependencies>
 
 	<build>
-		<sourceDirectory>${basedir}</sourceDirectory>
+		<!--sourceDirectory>${basedir}</sourceDirectory-->
 	
 		<pluginManagement>
 			<plugins>
@@ -26,31 +33,14 @@
 					<configuration>
 						<source>1.6</source>
 						<target>1.6</target>
-						<includes>
-							<include>src/main/java/**/*.java</include>            
-							<include>src/plugins/java/**/*.java</include>            
-							<include>src/tools/java/**/*.java</include>            
-						</includes>
+						<!--includes>
+							<include>src/main/java/**/*.java</include>            							  
+						</includes-->
 					</configuration>
 				</plugin>
 			</plugins>
 		</pluginManagement>				
 		
-		<!--plugins>
-			<plugin>
-				<artifactId>maven-source-plugin</artifactId>
-				<version>2.2.1</version>
-				<executions>
-					<execution>
-						<id>attach-sources</id>
-						<phase>package</phase>
-						<goals>
-							<goal>jar-no-fork</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins-->
 	</build>
 	
 </project>
