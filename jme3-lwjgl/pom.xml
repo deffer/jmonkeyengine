@@ -2,12 +2,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>org.deffer.com.jme3</groupId>
-	<artifactId>jme3-effects</artifactId>
+	<artifactId>jme3-lwjgl</artifactId>
 	<version>3.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>JMonkey Engine Effects</name>
-	<description>JMonkey Engine Effects module</description>
+	<name>JMonkey Engine lwjgl</name>
+	<description>JMonkey Engine lwjgl module</description>
 
 	
 	<properties>
@@ -20,6 +20,19 @@
 			<artifactId>jme3-core</artifactId>
 			<version>[3,4)</version>
 		</dependency>
+		<dependency>
+			<groupId>org.deffer.com.jme3</groupId>
+			<artifactId>jme3-desktop</artifactId>
+			<version>[3,4)</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.lwjgl.lwjgl</groupId>
+			<artifactId>lwjgl</artifactId>
+			<!-- no range for safety -->
+			<version>[2.9.1]</version>
+		</dependency>
+		
 	</dependencies>
 
 	<build>
