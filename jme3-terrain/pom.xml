@@ -3,7 +3,7 @@
 	
 	<groupId>org.deffer.com.jme3</groupId>
 	<artifactId>jme3-terrain</artifactId>
-	<version>3.1-SNAPSHOT</version>
+	<version>3.1.0-beta-1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>JMonkey Engine Terrain</name>
@@ -18,13 +18,12 @@
 		<dependency>
 			<groupId>org.deffer.com.jme3</groupId>
 			<artifactId>jme3-core</artifactId>
-			<version>[3,4)</version>
+			<version>[3.1.0-beta, 3.1.1)</version>
 		</dependency>
 	</dependencies>
 
 	<build>
-		<!--sourceDirectory>${basedir}</sourceDirectory-->
-	
+
 		<pluginManagement>
 			<plugins>
 				<plugin>
@@ -33,13 +32,10 @@
 					<configuration>
 						<source>1.6</source>
 						<target>1.6</target>
-						<!--includes>
-							<include>src/main/java/**/*.java</include>            							  
-						</includes-->
 					</configuration>
 				</plugin>
 			</plugins>
-		</pluginManagement>				
+		</pluginManagement>
 		
 		<plugins>
 			<plugin>
@@ -58,4 +54,16 @@
 		</plugins>
 	</build>
 	
+	<licenses>
+		<license>
+			<name>BSD</name>
+			<url>http://opensource.org/licenses/BSD-3-Clause</url>
+		</license>
+	</licenses>	
+
+	<scm>
+		<connection>scm:git:git://github.com/deffer/jmonkeyengine.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/deffer/jmonkeyengine.git</developerConnection>
+		<url>https://github.com/deffer/jmonkeyengine</url>
+	</scm>
 </project>
