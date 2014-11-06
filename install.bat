@@ -10,4 +10,6 @@ cd ../jme3-lwjgl
 call mvn install
 cd ../jme3-blender
 call mvn install
+cd ../jme3-niftygui
+call mvn install
 cd ..
