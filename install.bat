@@ -13,3 +13,4 @@ call mvn install
 cd ../jme3-niftygui
 call mvn install
 cd ..
+
